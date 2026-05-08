@@ -124,12 +124,3 @@ text 输出包含：
 ```bash
 go test ./...
 ```
-
-## 对比与验证建议
-
-可用本地 mock server 或项目中的 AI Gateway Mock Server 作为压测目标，再与 `hey`、`wrk` 做横向对比，重点关注：
-
-- QPS 是否稳定
-- P95 / P99 是否异常抖动
-- keep-alive 开启前后吞吐差异
-- 限速模式下请求速率是否接近期望值
